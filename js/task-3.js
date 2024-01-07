@@ -5,5 +5,5 @@ nameInput.addEventListener("input", addName);
 
 function addName() {
   const inputValue = nameInput.value.trim();
-  nameOutput.textContent = inputValue;
+  nameOutput.textContent = inputValue ? inputValue : "Anonymouse";
 }
