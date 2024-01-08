@@ -13,13 +13,13 @@ let startSize = 30;
 
 function createBoxes(amount) {
   container.innerHTML = "";
-  let curentSize = startSize;
+  let currentSize = startSize;
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
-    box.style.width = `${curentSize}px`;
-    box.style.height = `${curentSize}px`;
+    box.style.width = `${currentSize}px`;
+    box.style.height = `${currentSize}px`;
     box.style.backgroundColor = getRandomHexColor();
-    startSize += 10;
+    currentSize += 10;
     container.appendChild(box);
   }
 }
